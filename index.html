@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alexander Zugaj - Homework 2</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        
+        <div class="main">
+            <div class="section">
+                <h3>Reverse String</h3>
+                <p>Please input a string:</p>
+                <input type="text" id="reverseInput" placeholder="Enter a string...">
+                <button onclick="reverseString();">Reverse</button>
+                <p id="reverse"></p>
+            </div>
+            <div class="section">
+                <h3>Is This A Palindrome?</h3>
+                <p>Please input a number:</p>
+                <input type="text" id="palinInput" placeholder="Enter a number to test...">
+                <button onclick="isPalindrome();">Check</button>
+                <p id="palindrome"></p>
+            </div>
+            <div class = "section">
+                <h3>Calculate Total for Bill</h3>
+                <p>Input the values then click the button to begin:</p>
+                <input type="text" id="billInput" placeholder="Enter the subtotal...">
+                <input type="text" id="tipInput" placeholder="Enter your tip percentage...">
+                <button onclick="calculateBill();">Find Total</button>
+                <p id="tipcalc"></p>
+            </div>
+        </div>
     </body>
 </html>
