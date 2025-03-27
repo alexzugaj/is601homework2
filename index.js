@@ -4,23 +4,20 @@ function reverseString() {
     for (var i = input.length - 1; i >= 0; i--) {
         reversed += input[i];
     }
-    document.getElementById("reverse").innerHTML = `"${reversed}"`;
+    document.getElementById("reverse").innerHTML = `${reversed}`;
 }
 
 function isPalindrome() {
-    var input = parseInt(document.getElementById('reverseInput').value);
-    if (isNaN(input)) {
-        document.getElementById("palindrome").innerHTML = "Invalid input. Please try again.";
-        return;
-    }
+    var input = parseInt(document.getElementById('palinInput').value);
+
     var reverseInputStr = input.toString().split('').reverse().join('');
     var reverseInput = parseInt(reverseInputStr);
     var resultOutput = document.getElementById("palindrome");
     if (input == reverseInput) {
-        resultOutput.innerHTML = `"${input}" is a palindrome!`;
+        resultOutput.innerHTML = `${input} is a palindrome!`;
     }
     else {
-        resultOutput.innerHTML = `"${input}" is not a palindrome.`;
+        resultOutput.innerHTML = `${input} is not a palindrome.`;
     }
 }
 
